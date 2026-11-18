@@ -1,0 +1,49 @@
+# Global Supply Chain & Logistics Operations Analysis
+
+## Project Overview
+This repository contains the end-to-end data analysis pipeline and Business Intelligence (BI) dashboard developed for the **Database Knowledge Extraction** final project. The objective is to analyze weekly maritime/land route operations, identify cost and delay bottlenecks, and evaluate environmental impact across global trade routes.
+
+## Repository Structure
+* **`weekly_route_operations.csv`**: Raw dataset containing historical weekly records of global logistics operations (trade volume, freight costs, shipping delays, port congestion, fuel costs, and carbon emissions).
+* **`dataset_limpio.csv`**: Cleaned and preprocessed dataset generated after handling missing values, standardizing date formats, and validating numerical distributions.
+* **`final_visualizations.ipynb`**: Jupyter Notebook containing the Python ETL pipeline (`pandas`, `numpy`), statistical summaries, correlation heatmaps, and exploratory charts (`matplotlib`, `seaborn`, `plotly`).
+* **`Dashboard_Logistica_Global.pbix`**: Interactive Power BI Desktop report featuring KPI cards (total carbon emissions), comparative bar charts (trade volume vs. freight cost by route), and dynamic Year/Quarter slicers.
+
+## Methodology & Workflow
+1. **Data Cleaning & Preprocessing (Python)**: Loaded raw operational records from `weekly_route_operations.csv`, removed duplicates/null anomalies, and exported the standardized table to `dataset_limpio.csv`.
+2. **Exploratory Data Analysis (EDA)**: Evaluated correlations between port congestion, fuel cost indices, and shipping delays in `final_visualizations.ipynb`.
+3. **Interactive BI Visualization (Power BI)**: Imported `dataset_limpio.csv` into Power BI Desktop to build an executive dashboard enabling decision-makers to filter performance metrics by time period and route ID.
+
+## How to Run
+1. **Python Notebook**: Ensure Python 3.x is installed along with `pandas`, `numpy`, `matplotlib`, `seaborn`, and `plotly`. Place `weekly_route_operations.csv` in the same directory and run all cells in `final_visualizations.ipynb`.
+2. **Power BI Dashboard**: Open `Dashboard_Logistica_Global.pbix` using **Power BI Desktop**. If prompted to refresh data paths, point the CSV data source to your local `dataset_limpio.csv` file.
+
+
+
+
+
+
+
+
+
+Español
+
+# Análisis de Operaciones de Cadena de Suministro y Logística Global
+
+## Descripción del Proyecto
+Este repositorio contiene el flujo completo (*pipeline*) de análisis de datos y el tablero de Inteligencia de Negocios (BI) desarrollado para el proyecto final de **Extracción de Conocimiento en Bases de Datos**. El objetivo es analizar las operaciones semanales de rutas logísticas, identificar cuellos de botella en costos y retrasos, y evaluar el impacto ambiental en rutas comerciales globales.
+
+## Estructura del Repositorio
+* **`weekly_route_operations.csv`**: Conjunto de datos original (crudo) con registros semanales históricos de operaciones logísticas globales (volumen comercial, costos de flete, días de retraso, congestión portuaria, costos de combustible y emisiones de carbono).
+* **`dataset_limpio.csv`**: Conjunto de datos limpio y preprocesado, generado tras el tratamiento de valores nulos, estandarización de fechas y validación de distribuciones numéricas.
+* **`final_visualizations.ipynb`**: Cuaderno de Jupyter con el pipeline ETL en Python (`pandas`, `numpy`), resúmenes estadísticos, mapas de calor de correlación y gráficos exploratorios (`matplotlib`, `seaborn`, `plotly`).
+* **`Dashboard_Logistica_Global.pbix`**: Reporte interactivo en Power BI Desktop que incluye tarjetas de indicadores clave (emisiones totales de carbono), gráficos comparativos de barras (volumen comercial vs. costo de flete por ruta) y segmentadores dinámicos por Año y Trimestre.
+
+## Metodología y Flujo de Trabajo
+1. **Limpieza y Preprocesamiento de Datos (Python)**: Carga de registros operativos desde `weekly_route_operations.csv`, depuración de anomalías/duplicados y exportación de la tabla estandarizada hacia `dataset_limpio.csv`.
+2. **Análisis Exploratorio de Datos (EDA)**: Evaluación de correlaciones entre congestión portuaria, índices de costo de combustible y días de retraso dentro de `final_visualizations.ipynb`.
+3. **Visualización Interactiva BI (Power BI)**: Importación de `dataset_limpio.csv` en Power BI Desktop para construir un tablero ejecutivo que permite filtrar métricas de desempeño por periodo de tiempo y ruta (`route_id`).
+
+## Instrucciones de Ejecución
+1. **Cuaderno de Python**: Asegúrate de tener instalado Python 3.x junto con las librerías `pandas`, `numpy`, `matplotlib`, `seaborn` y `plotly`. Coloca `weekly_route_operations.csv` en la misma carpeta y ejecuta todas las celdas de `final_visualizations.ipynb`.
+2. **Tablero de Power BI**: Abre `Dashboard_Logistica_Global.pbix` utilizando **Power BI Desktop**. Si el programa solicita actualizar la ruta de origen, selecciona tu archivo local `dataset_limpio.csv`.
